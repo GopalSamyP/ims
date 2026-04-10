@@ -7,6 +7,12 @@ pipeline {
 
     stages {
 
+        stage('Clean Workspace') {
+            steps {
+                deleteDir()
+            }
+        }
+
         stage('Clone') {
             steps {
                 git branch: 'main', url: 'https://github.com/GopalSamyP/ims.git'
