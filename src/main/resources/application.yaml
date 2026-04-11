@@ -6,7 +6,7 @@ spring:
     name: INVENTORY-MANAGEMENT-SERVICE
 
   datasource:
-    url: jdbc:mysql://localhost:3306/ims_db
+    url: jdbc:mysql://host.docker.internal:3306/ims_db
     username: root
     password: SecurePass@123
     driver-class-name: com.mysql.cj.jdbc.Driver
